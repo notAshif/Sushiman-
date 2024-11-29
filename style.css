@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+
+@import url("section/header.css");
+@import url("section/hero.css");
+@import url("section/aboutus.css");
+@import url("section/menu.css");
+@import url("section/tranding.css");
+@import url("section/subcription.css");
+
+:root {
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  
+    --primary-color: #b1454a;
+    --secondary-color: #121212;
+  
+    --black-200: #020202;
+    --black-300: #333333;
+    --black-400: #1f1e31;
+    --black-500: #555555;
+    --gray-100: #888888;
+  
+    --color-white: #fff;
+    --color-creamson: #fff0de;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--playfair-display);
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--color-creamson);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-hide__scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-hide__scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media screen and (max-width: 900px) {
+    .header-nav{
+        background-color: var(--primary-color);
+    }
+
+    .header-menu{
+        display: none;
+    }
+
+    .header-mobile__menu{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .header-logo{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero-section__img img{
+        width: 100%;
+        transform: matrix(1, .05, 0, 1.25, 0, 0) !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hero-section__img h2{
+        font-size: 70px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero-section__img h2{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .hero-section-content__Info{
+        padding: 32px;
+    }
+
+    .hero-section-content__Info h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .hero-section-content__Info p{
+        margin: 32px 0;
+    }
+
+    .hero-section__button{
+        margin: 41px 0;
+    }
+
+    .hero-section__testination{
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us{
+        flex-direction: column;
+    }
+    
+    .about-us_image{
+        flex-direction: row;
+    }
+
+    .about-us__image-sushi3{
+        border-bottom: none;
+        border-right: 8px solid var(--color-creamson);
+    }
+
+    .about-us__button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-us_image div{
+        padding: 32px;
+    }
+
+    .about-us__image-sushi3 img,
+    .about-us__image-sushi2 img{
+        width: 50%;
+        height: 160px;
+        object-fit: contain;
+    }
+
+    .about-us__button{
+        top: 44%;
+    }
+
+    .about-us__content{
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-us_image {
+        flex-direction: column;
+    }
+    
+    .about-us__image-sushi3{
+        border-bottom: 8px solid var(--color-creamson);
+        border-right: none;
+    }
+
+    .about-us__button{
+        display: block;
+        top: 47%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .popular_food{
+        padding: 64px 32px;
+    }
+
+    .popular_food-card,
+    .popular_food-card.active-card{
+        min-width: 100%;
+    }
+}
+
+@media   screen and (max-width: 1024px) {
+    .tranding_sushi{
+        flex-direction: column;
+    }
+
+    .tranding_image{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .tranding_discovery,
+    .tranding_arrow{
+        display: none;
+    }
+
+    .tranding_drink{
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .tranding_image img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .tranding_content{
+        padding: 32px;
+    }
+}
+
+

@@ -1,0 +1,110 @@
+.about-us{
+    display: flex;
+    min-height: 720px;
+    overflow: hidden;
+}
+
+.about-us_image{
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    background: var(--color-white);
+}
+
+.about-us_image div{
+    display: flex;
+    flex: 1;
+
+    align-items: center;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 32px 64px;
+}
+
+.about-us__image-sushi2{
+    background-image: url('/assets/about_bg2.png');
+}
+
+.about-us__image-sushi2 img{
+    width: 240px;
+    height: 160px;
+}
+
+.about-us__image-sushi3{
+    border-bottom: 8px solid var(--color-creamson);
+    background-image: url('/assets/about_bg1.png');
+}
+
+.about-us__image-sushi3 img{
+    width: 255px;
+    height: 200px;
+}
+
+.about-us__button{
+    position: absolute;
+    right: 0;
+
+    padding: 12px 32px;
+    min-height: 64px;
+    background: var(--secondary-color);
+
+    border: 0;
+    outline: 0;
+    font-family: var(--plus-jakarta-sans);
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+
+    cursor: pointer;
+    color: #fff;
+    border-radius: 32px 0 0 32px;
+}
+
+.about-us__button img{
+    object-fit: contain;
+    margin-left: 32px;
+}
+
+.about-us__content{
+    flex: 1;
+    padding: 64px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sushi-subtitle{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+
+    letter-spacing: -.01em;
+    opacity: .8;
+    font-family: var(--plus-jakarta-sans);
+}
+
+.sushi-title{
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 16px;
+}
+
+.sushi-decription{
+    margin: 28px 0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 36px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: .8;
+}
+
+
+
